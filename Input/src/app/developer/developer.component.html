@@ -1,0 +1,19 @@
+<div class="container-fluid w-50 m-2">
+  <h1 class="m-2">Developper Profil</h1>
+  <div class="card p-2 m-2" >
+    <div class="card-body">
+      <h5 class="card-title">
+        {{ developper.firstName }} {{ developper.lastName }} -
+        {{ developper.age }} ans
+      </h5>
+      <p class="card-text">{{ developper.bio }}</p>
+    </div>
+    <div>
+      <ul>
+        <div *ngFor="let skill of developper.skills">
+          <app-skill [skill]="skill"></app-skill>
+        </div>
+      </ul>
+    </div>
+  </div>
+  </div>
